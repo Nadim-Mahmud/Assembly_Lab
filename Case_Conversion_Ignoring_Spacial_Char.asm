@@ -14,7 +14,8 @@ MOV BL,AL
     ; converting upper to lower and vice-versa
 
 CMP BL,'z'
-JG ignore
+    ; ignoring spacial charecter
+JG ignore  
 CMP BL,'A'
 JL ignore
 
