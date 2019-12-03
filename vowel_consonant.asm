@@ -20,7 +20,22 @@ NEXT:
 INT 21H                   
 CMP AL, 0DH
 JZ EXIT
+
+CMP AL,'z'
+JG ignore  
+CMP AL,'A'
+JL ignore
+
+CMP AL,96
+JG  OK
+
+CMP AL,90
+JG  ignore
+
+OK:
+
 MOV str[SI], AL
+
 
 CMP str[SI],'A'  
 JZ vowel
@@ -49,6 +64,7 @@ SUB BL,1
 vowel:
 ADD BL,1
 
+ignore:
 
 INC SI
 JMP NEXT            
