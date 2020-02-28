@@ -1,4 +1,4 @@
-; string case_revarsal
+; string revarsal
 
 .MODEL SMALL
 .STACK 100H
