@@ -1,4 +1,4 @@
-;Series summation
+;Factorial
 
 .MODEL SMALL
 .STACK 100H
